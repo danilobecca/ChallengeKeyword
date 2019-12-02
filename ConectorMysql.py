@@ -15,9 +15,8 @@ class DataMail(peewee.Model):
     class Meta:
         database = db
 
-
 #Metodo para grabar los resultado en la BD, validando previamente si existe o no el ID del mail.
-def save(customID,customDate,customFrom,customSub):
+def generate(customID,customDate,customFrom,customSub):
 
     try:
             mail = DataMail.get(DataMail.idMail == customID)

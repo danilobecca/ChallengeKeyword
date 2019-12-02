@@ -5,13 +5,13 @@ from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 
-# If modifying these scopes, delete the file token.pickle.
-#SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
-#SCOPES = ['https://www.googleapis.com/auth/gmail.settings.basic']
+# Si se modifica el scope, eliminar el archivo token.pickle y volver a ejecutar.
+    #SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
+    #SCOPES = ['https://www.googleapis.com/auth/gmail.settings.basic']
+    #SCOPES = ['https://mail.google.com/']
 
 #Se elige los permisos de acceso a la cuenta de gmail.s
-SCOPES = ['https://mail.google.com/']
-
+SCOPES = ['https://www.googleapis.com/auth/gmail.readonly']
 
 def main():
     """Shows basic usage of the Gmail API.
